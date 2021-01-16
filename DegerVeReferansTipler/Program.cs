@@ -25,6 +25,8 @@ namespace DegerVeReferansTipler
             //peki sayilar1e tanımladığın heap ne oldu? .netin garbage disposalı bir süre sonra bunu temizliyor cunku baglı oldugu yer yok
 
 
+            ///
+
         }
     }
 }
