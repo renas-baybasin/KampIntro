@@ -1,0 +1,35 @@
+﻿using System;
+
+namespace OOP1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Product product1 = new Product();
+            product1.Id = 1;
+            product1.CategoryId = 2;
+            product1.ProductName = "Masa";
+            product1.UnitPrice = 500;
+            product1.UnitsInStocks = 3;
+
+            Product product2 = new Product {Id = 2,                 
+                                            CategoryId=5, 
+                                            UnitsInStocks = 5, 
+                                            ProductName = "Kalem", 
+                                            UnitPrice= 35};
+
+            //PascalCase-Kelimelerin ilk harfleri buyuk  
+            //camelCase-ilk kelimenin ilk harfi kucuk diger kelimelerin ilk harfi buyuk
+            ProductManager productManager = new ProductManager();
+            productManager.Add(product1);
+            productManager.Update(product2);
+
+
+
+            //int, double, bool.. deger tip
+            //diziler, class, abstract class, interface.. referans tipler
+            //ref out
+        }
+    }
+}
